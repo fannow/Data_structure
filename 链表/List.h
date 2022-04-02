@@ -9,6 +9,12 @@ typedef struct SListNode
 {
 	SLTDateType data;
 	struct SListNode* next;
+	SListNode() {
+
+	}
+	SListNode(int x) :data(x) {
+		next = NULL;
+	}
 }SListNode;
 // 动态申请一个节点
 SListNode* BuySListNode(SLTDateType x);
